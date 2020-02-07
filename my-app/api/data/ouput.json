@@ -1,0 +1,378 @@
+{
+    "objectives": [
+        {
+            "id": 0,
+            "name": "Corner the Market",
+            "condition": "Control 4 planets that each have the same planet trait",
+            "points": 1,
+            "stage": 1,
+            "phase": 0
+        },
+        {
+            "id": 1,
+            "name": "Develop Weaponry",
+            "condition": "Own 2 unit upgrade technologies",
+            "points": 1,
+            "stage": 1,
+            "phase": 0
+        },
+        {
+            "id": 2,
+            "name": "Diversify Research",
+            "condition": "Own 2 technologies in each of 2 colors",
+            "points": 1,
+            "stage": 1,
+            "phase": 0
+        },
+        {
+            "id": 3,
+            "name": "Erect a Monument",
+            "condition": "Spend 8 resources",
+            "points": 1,
+            "stage": 1,
+            "phase": 0
+        },
+        {
+            "id": 4,
+            "name": "Expand Borders",
+            "condition": "Control 6 planets in non-home systems",
+            "points": 1,
+            "stage": 1,
+            "phase": 0
+        },
+        {
+            "id": 5,
+            "name": "Found Research Outposts",
+            "condition": "Control 3 planets that have technology specialties",
+            "points": 1,
+            "stage": 1,
+            "phase": 0
+        },
+        {
+            "id": 6,
+            "name": "Intimidate Council",
+            "condition": "Have 1 or more ships in 2 systems that are adjacent to Mecatol Rex's System",
+            "points": 1,
+            "stage": 1,
+            "phase": 0
+        },
+        {
+            "id": 7,
+            "name": "Lead From the Front",
+            "condition": "Spend a total of 3 tokens from your tactic and/or strategy pools",
+            "points": 1,
+            "stage": 1,
+            "phase": 0
+        },
+        {
+            "id": 8,
+            "name": "Negotiate Trade Routes",
+            "condition": "Spend 5 trade goods",
+            "points": 1,
+            "stage": 1,
+            "phase": 0
+        },
+        {
+            "id": 9,
+            "name": "Sway the Council",
+            "condition": "Spend 8 influence",
+            "points": 1,
+            "stage": 1,
+            "phase": 0
+        },
+        {
+            "id": 10,
+            "name": "Centralize Galactic Trade",
+            "condition": "Spend 10 trade goods",
+            "points": 2,
+            "stage": 2,
+            "phase": 0
+        },
+        {
+            "id": 11,
+            "name": "Conquer the Weak",
+            "condition": "Control 1 planet that is in another player's home system",
+            "points": 2,
+            "stage": 2,
+            "phase": 0
+        },
+        {
+            "id": 12,
+            "name": "Form Galactic Brain Trust",
+            "condition": "Control 5 planets that have technology specialties",
+            "points": 2,
+            "stage": 2,
+            "phase": 0
+        },
+        {
+            "id": 13,
+            "name": "Found a Golden Age",
+            "condition": "Spend 16 resources",
+            "points": 2,
+            "stage": 2,
+            "phase": 0
+        },
+        {
+            "id": 14,
+            "name": "Galvanize the People",
+            "condition": "Spend a total of 6 tokens from your tactic and/or strategy pools",
+            "points": 2,
+            "stage": 2,
+            "phase": 0
+        },
+        {
+            "id": 15,
+            "name": "Manipulate Galactic Law",
+            "condition": "Spend 16 influence",
+            "points": 2,
+            "stage": 2,
+            "phase": 0
+        },
+        {
+            "id": 16,
+            "name": "Master the Sciences",
+            "condition": "Own 2 technologies in each of 4 colors",
+            "points": 2,
+            "stage": 2,
+            "phase": 0
+        },
+        {
+            "id": 17,
+            "name": "Revolutionize Warfare",
+            "condition": "Own 3 unit upgrade technologies",
+            "points": 2,
+            "stage": 2,
+            "phase": 0
+        },
+        {
+            "id": 18,
+            "name": "Subdue the Galaxy",
+            "condition": "Control 11 planets in non-home systems",
+            "points": 2,
+            "stage": 2,
+            "phase": 0
+        },
+        {
+            "id": 19,
+            "name": "Unify the Colonies",
+            "condition": "Control 6 planets that each have the same planet trait",
+            "points": 2,
+            "stage": 2,
+            "phase": 0
+        },
+        {
+            "id": 20,
+            "name": "Destroy Their Greatest Ship",
+            "condition": "Destroy another player's war sun or flagship",
+            "points": 1,
+            "stage": 0,
+            "phase": 1
+        },
+        {
+            "id": 21,
+            "name": "Make an Example of Their World",
+            "condition": "Use BOMBARDMENT to destroy the last of a player's ground forces on a planet",
+            "points": 1,
+            "stage": 0,
+            "phase": 1
+        },
+        {
+            "id": 22,
+            "name": "Spark a Rebellion",
+            "condition": "Win a combat against a player who has the most victory points",
+            "points": 1,
+            "stage": 0,
+            "phase": 1
+        },
+        {
+            "id": 23,
+            "name": "Turn Their Fleets to Dust",
+            "condition": "Use SPACE CANNON to destroy the last of a player's ships in a system",
+            "points": 1,
+            "stage": 0,
+            "phase": 1
+        },
+        {
+            "id": 24,
+            "name": "Unveil Flagship",
+            "condition": "Win a space combat in a system that contains your flagship. You cannot score this objective if your flagship is destroyed in the combat",
+            "points": 1,
+            "stage": 0,
+            "phase": 1
+        },
+        {
+            "id": 25,
+            "name": "Adapt New Strategies",
+            "condition": "Own 2 faction technologies. (Valefar Assimilator technologies do not count toward this objective)",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 26,
+            "name": "Become the Gatekeeper",
+            "condition": "Have 1 or more ships in a system that contains an alpha wormhole and 1 or more ships in a system that contains a beta wormhole",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 27,
+            "name": "Control the Region",
+            "condition": "Have 1 or more ships in 6 systems",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 28,
+            "name": "Cut Supply Lines",
+            "condition": "Have 1 or more ships in the same system as another player's space dock",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 29,
+            "name": "Establish a Perimeter",
+            "condition": "Have 4 PDS units on the game board",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 30,
+            "name": "Forge an Alliance",
+            "condition": "Control 4 cultural planets",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 31,
+            "name": "Form a Spy Network",
+            "condition": "Discard 5 action Cards",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 32,
+            "name": "Fuel the War Machine",
+            "condition": "Have 3 space docks on the game board",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 33,
+            "name": "Gather a Mighty Fleet",
+            "condition": "Have 5 dreadnoughts on the game board",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 34,
+            "name": "Learn the Secrets of the Cosmos",
+            "condition": "Have 1 or more ships in 3 systems that are each adjacent to an anomaly",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 35,
+            "name": "Master the Laws of Physics",
+            "condition": "Own 4 technologies of the same color",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 36,
+            "name": "Mine Rare Metals",
+            "condition": "Control 4 hazardous planets",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 37,
+            "name": "Monopolize Production",
+            "condition": "Control 4 industrial planets",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 38,
+            "name": "Occupy the Seat of the Empire",
+            "condition": "Control Mecatol Rex and have 3 or more ships in its system",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        },
+        {
+            "id": 39,
+            "name": "Threaten Enemies",
+            "condition": "Have 1 or more ships in a system that is adjacent to another player's home system",
+            "points": 1,
+            "stage": 0,
+            "phase": 2
+        }
+    ]
+,
+	"setobjectives": [
+		{
+            "id": 0,
+            "objectiveid": -1
+        },
+				{
+            "id": 1,
+            "objectiveid": -1
+        },
+				{
+            "id": 2,
+            "objectiveid": -1
+        },
+				{
+            "id": 3,
+            "objectiveid": -1
+        },
+				{
+            "id": 4,
+            "objectiveid": -1
+        },
+				{
+            "id": 5,
+            "objectiveid": -1
+        },
+				{
+            "id": 6,
+            "objectiveid": -1
+        },
+				{
+            "id": 7,
+            "objectiveid": -1
+        },
+				{
+            "id": 8,
+            "objectiveid": -1
+        },
+				{
+            "id": 9,
+            "objectiveid": -1
+        }
+	]
+,
+	"claimedobjectives": [
+		{
+			"color": "red",
+            "objectiveid": 6
+        },
+				{
+			"color": "blue",
+            "objectiveid": 6
+        }
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"claimedobjectives": [
+		{
+			"color": "red",
+            "objectiveid": 6
+        },
+				{
+			"color": "blue",
+            "objectiveid": 6
+        }
+	]
+}

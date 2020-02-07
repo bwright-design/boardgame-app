@@ -1,0 +1,44 @@
+{
+	"setobjectives": [
+		{
+            "id": 0,
+            "objectiveid": -1
+        },
+				{
+            "id": 1,
+            "objectiveid": -1
+        },
+				{
+            "id": 2,
+            "objectiveid": -1
+        },
+				{
+            "id": 3,
+            "objectiveid": -1
+        },
+				{
+            "id": 4,
+            "objectiveid": -1
+        },
+				{
+            "id": 5,
+            "objectiveid": -1
+        },
+				{
+            "id": 6,
+            "objectiveid": -1
+        },
+				{
+            "id": 7,
+            "objectiveid": -1
+        },
+				{
+            "id": 8,
+            "objectiveid": -1
+        },
+				{
+            "id": 9,
+            "objectiveid": -1
+        }
+	]
+}
