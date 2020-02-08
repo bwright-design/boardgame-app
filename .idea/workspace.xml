@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="371264b1-e26c-43ca-8894-d0c2cb2248c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/Arborec.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/Hacan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/Jolnar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/Muaat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/Sol.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/Winnu.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/api/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/api/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581117046255</updated>
-      <workItem from="1581117047450" duration="20434000" />
+      <workItem from="1581117047450" duration="21564000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1581117330524</created>
@@ -82,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581138245445</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="major html/css overhaul">
+      <created>1581182121006</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581182121006</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
