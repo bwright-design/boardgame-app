@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Rx';
 import { ObjectiveService } from './objective.service'
@@ -12,7 +12,7 @@ import {AnonymousSubscription} from "rxjs/Subscription";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
 	private log(message: string) {
@@ -34,13 +34,37 @@ export class AppComponent {
 	chosenObjectivesStgTwo: Objective[] = [];
 	randoms: any[] = [];
 
+	//BRIANS
+  point = Array;
+  window = false;
+  windowIndex: number;
+  windowLevel: number;
+
+  showWindow(i: number, level: number) {
+    this.windowLevel = level;
+    this.windowIndex = i;
+    this.window = true;
+    alert('window level ' + this.windowLevel);
+  }
+  hideWindow() {
+    this.window = false;
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent): void {
+    if (event.keyCode === 27) {
+      this.window = false;
+    }
+  }
+  //BRIANS
+
 	parseObjectives(): void {
 		var objlength = this.objectives.length;
 		//this.log(`parsing objectives length=${objlength}`);
 		for(var i=0;i<objlength;i++) {
 			var nextobj = this.objectives[i];
 			if( nextobj.stage == 1 )
-			{	
+			{
 				//this.log(`parsing stg1 objective id=${nextobj.id}`);
 				this.objectivesStgOne.push( nextobj );
 			}
@@ -49,9 +73,9 @@ export class AppComponent {
 				//this.log(`parsing stg2 objective id=${nextobj.id}`);
 				this.objectivesStgTwo.push( nextobj );
 			}
-		}		
+		}
 	}
-	
+
 	getIsClaimed(color: string, id: number, pos: number) : boolean
 	{
 		return this.getClaimedPos(color,id) >= 0;
@@ -70,7 +94,7 @@ export class AppComponent {
 		}
 		return pos;
 	}
-	
+
 	getUniqueClaimed() : number
 	{
 		var max = 0;
@@ -83,8 +107,8 @@ export class AppComponent {
 		}
 		return max;
 	}
-	
-	getPlayerScore( color: string ) : PlayerScore 
+
+	getPlayerScore( color: string ) : PlayerScore
 	{
 		for( var i=0;i<this.scores.length;i++ )
 		{
@@ -94,7 +118,7 @@ export class AppComponent {
 			}
 		}
 	}
-	
+
 	claimobjectivescore(inpscore: PlayerScore, updown: boolean)
 	{
 		var pscore = this.getPlayerScore(inpscore.color);
@@ -124,10 +148,10 @@ export class AppComponent {
 			}
 			pscore.score = newpoints;
 			this.log(`claimed color=${pscore.color} points=${pscore.points} and updown=${updown}`);
-			this.objectiveService.setPlayerScore( pscore ).subscribe();	
+			this.objectiveService.setPlayerScore( pscore ).subscribe();
 		}
 	}
-	
+
 	claimobjective(ocolor: string, oid: number) {
 		var pos = this.getUniqueClaimed();
 		var isclaimed = this.getIsClaimed( ocolor, oid, pos );
@@ -175,13 +199,13 @@ export class AppComponent {
 			this.objectiveService.setPlayerScore( pscore ).subscribe();
 		}
 	}
-	
+
 	getClaimedObjectives()
 	{
 		this.claimed = [];
 		this.refreshClaims();
 	}
-	
+
 	revealObjective()
 	{
 		if( confirm("Are you sure you want to reveal the next objective?") )
@@ -201,19 +225,19 @@ export class AppComponent {
 			}
 		}
 	}
-	
+
 	getObjectives(): void {
 		this.objectiveService.getObjectives()
 			.subscribe(objectives => this.objectives = objectives);
-		
+
 		this.objectiveService.getSetObjectives()
 			.subscribe(objectives => this.processSetObjectives( objectives ) );
-	
+
 		this.getClaimedObjectives();
-		
+
 		this.refreshScores();
 	}
-	
+
 	getIsVisible( id: number ) : boolean
 	{
 		var check = false;
@@ -223,7 +247,7 @@ export class AppComponent {
 		}
 		return check;
 	}
-	
+
 	processSetObjectives( setobjectives: SetObjective[] ) {
 		/*for( var i=0;i<setobjectives.length;i++ )
 		{
@@ -253,21 +277,21 @@ export class AppComponent {
 					this.stgtwovisibleobj.push( this.objectives[setobjectives[i].objectiveid] );
 				}
 			}
-			
+
 			if( setobjectives[i].isvisible )
 			{
 				this.visibleobj.push( this.objectives[setobjectives[i].objectiveid] );
 			}
 		}
 	}
-	
+
 	test(){
 		for( var i=0;i<this.scores.length;i++ )
 		{
 			this.log( `player=${this.scores[i].color} score=${this.getPlayerScore(this.scores[i].color).score}` );
 		}
 	}
-	
+
 	getRandomStgOneObjective()
 	{
 		var i = Math.floor((Math.random() * this.objectivesStgOne.length));
@@ -283,7 +307,7 @@ export class AppComponent {
 		this.chosenObjectivesStgTwo.push( objqueued );
 		this.objectivesStgTwo.splice(i,1);
 	}
-	
+
 	zeroScore()
 	{
 		for( var i=0;i<this.scores.length;i++ )
@@ -291,13 +315,13 @@ export class AppComponent {
 			this.scores[i].score = 0;
 			this.objectiveService.setPlayerScore( this.scores[i] ).subscribe();
 		}
-		
+
 		for( var a=0;a<this.claimed.length;a++ )
 		{
 			this.objectiveService.deleteClaimedObjective(this.claimed[a].id)
 				.subscribe();
 		}
-		
+
 		this.claimed = [];
 		this.visibleobj = [];
 		this.stgtwovisibleobj = [];
@@ -311,9 +335,9 @@ export class AppComponent {
 			this.chosenObjectivesStgTwo = [];
 			this.objectivesStgOne = [];
 			this.objectivesStgTwo = [];
-			
+
 			this.parseObjectives();
-			
+
 			for(var i=0;i<5;i++) {
 				this.getRandomStgOneObjective();
 				//this.log(`length of array id=${this.objectivesStgOne.length}`);
@@ -321,26 +345,26 @@ export class AppComponent {
 			for(var a=0;a<5;a++) {
 				this.getRandomStgTwoObjective();
 			}
-			
+
 			this.setObjectives();
 			this.zeroScore();
 		}
 	}
-	
+
 	setObjectives(): void {
 		var fullObjs = this.chosenObjectivesStgOne.concat( this.chosenObjectivesStgTwo );
 		this.objectiveService.setObjectives(fullObjs);
 		//this.objectiveService.addSetObjective(this.chosenobjectives[0]).subscribe();
-			//.subscribe();		
+			//.subscribe();
 	}
-	
+
 	private refreshScores(): void {
 		this.scoresSubscription = this.objectiveService.getPlayerScores().subscribe(scoresub => {
 			this.scores = scoresub;
 			this.subscribeToScores();
 			});
 	}
-	
+
 	private subscribeToScores(): void {
 		this.scoresSubscription = Observable.timer(2000).first().subscribe(() => this.refreshScores());
 	}
@@ -351,7 +375,7 @@ export class AppComponent {
 			this.subscribeToClaims();
 			});
 	}
-	
+
 	private subscribeToClaims(): void {
 		this.claimedSubscription = Observable.timer(2000).first().subscribe(() => this.refreshClaims());
 	}
@@ -361,7 +385,7 @@ export class AppComponent {
 	ngOnInit() {
 		this.getObjectives();
 	}
-	
+
 	ngOnDestroy()
 	{
 		this.scoresSubscription.unsubscribe();

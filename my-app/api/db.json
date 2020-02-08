@@ -324,47 +324,47 @@
   "setobjectives": [
     {
       "id": 0,
-      "objectiveid": 5,
-      "isvisible": false
+      "objectiveid": 0,
+      "isvisible": true
     },
     {
       "id": 1,
-      "objectiveid": 7,
-      "isvisible": false
+      "objectiveid": 9,
+      "isvisible": true
     },
     {
       "id": 2,
-      "objectiveid": 0,
-      "isvisible": false
+      "objectiveid": 3,
+      "isvisible": true
     },
     {
       "id": 3,
-      "objectiveid": 4,
-      "isvisible": false
+      "objectiveid": 6,
+      "isvisible": true
     },
     {
       "id": 4,
-      "objectiveid": 2,
-      "isvisible": false
+      "objectiveid": 4,
+      "isvisible": true
     },
     {
       "id": 5,
-      "objectiveid": 17,
-      "isvisible": false
+      "objectiveid": 11,
+      "isvisible": true
     },
     {
       "id": 6,
-      "objectiveid": 19,
+      "objectiveid": 18,
       "isvisible": false
     },
     {
       "id": 7,
-      "objectiveid": 15,
+      "objectiveid": 10,
       "isvisible": false
     },
     {
       "id": 8,
-      "objectiveid": 13,
+      "objectiveid": 15,
       "isvisible": false
     },
     {
