@@ -2,119 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="371264b1-e26c-43ca-8894-d0c2cb2248c1" name="Default Changelist" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/boardgame-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/api/data/claimedobjectives.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/api/data/objandset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/api/data/objectives.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/api/data/ouput.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/api/data/setobjectives.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/api/db.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/api/db_backup.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/api/routes.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/proxy.conf.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/claimedobjective.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/fake-teams.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/message.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/message.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/objective.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/objective.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/objective.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/playerscore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/setobjective.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/team.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/team.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/team.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/benchmarks/benchmark.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/diff/block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/diff/callbacks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/diff/change.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/diff/diff.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/diff/hunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/actor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/binary_parser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/blame.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/blame_line.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/blob.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/commit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/commit_stats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/diff.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/file_index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/file_window.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/git.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/git_file_operations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/git_index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/git_object.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/head.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/internal/directory_entry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/internal/git_blob.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/internal/git_commit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/internal/git_tag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/internal/git_tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/loose_storage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/merge.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/pack_storage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/raw_object.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/ref.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/remote.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/repo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/repository.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/status.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/status_file.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/sub_module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/tag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/git/user_info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/sprintf/sprintf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/lib/zlib/zlib.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/git/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/mime/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/mime/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/mime/mime.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/mime/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/mime/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/mime/types/mime.types" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/mime/types/node.types" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/app/app.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/api/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/api/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/styles.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,6 +18,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XV2foX15JAHEZEvrSakMew6H7R" />
@@ -156,8 +56,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581117046255</updated>
-      <workItem from="1581117047450" duration="269000" />
+      <workItem from="1581117047450" duration="2956000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1581117330524</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581117330524</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
