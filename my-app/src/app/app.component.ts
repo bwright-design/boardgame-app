@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Rx';
 import { ObjectiveService } from './objective.service'
@@ -33,6 +33,30 @@ export class AppComponent {
 	chosenObjectivesStgOne: Objective[] = [];
 	chosenObjectivesStgTwo: Objective[] = [];
 	randoms: any[] = [];
+
+	//BRIANS
+  point = Array;
+  window = false;
+  windowIndex: number;
+  windowLevel: number;
+
+  showWindow(i: number, level: number) {
+    this.windowLevel = level;
+    this.windowIndex = i;
+    this.window = true;
+    alert('window level ' + this.windowLevel);
+  }
+  hideWindow() {
+    this.window = false;
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent): void {
+    if (event.keyCode === 27) {
+      this.window = false;
+    }
+  }
+  //BRIANS
 
 	parseObjectives(): void {
 		var objlength = this.objectives.length;

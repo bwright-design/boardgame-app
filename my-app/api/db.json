@@ -325,85 +325,116 @@
     {
       "id": 0,
       "objectiveid": 0,
-      "isvisible": false
+      "isvisible": true
     },
     {
       "id": 1,
-      "objectiveid": 3,
-      "isvisible": false
+      "objectiveid": 9,
+      "isvisible": true
     },
     {
       "id": 2,
-      "objectiveid": 2,
-      "isvisible": false
+      "objectiveid": 3,
+      "isvisible": true
     },
     {
       "id": 3,
-      "objectiveid": 7,
-      "isvisible": false
+      "objectiveid": 6,
+      "isvisible": true
     },
     {
       "id": 4,
       "objectiveid": 4,
-      "isvisible": false
+      "isvisible": true
     },
     {
       "id": 5,
-      "objectiveid": 10,
-      "isvisible": false
+      "objectiveid": 11,
+      "isvisible": true
     },
     {
       "id": 6,
-      "objectiveid": 19,
+      "objectiveid": 18,
       "isvisible": false
     },
     {
       "id": 7,
-      "objectiveid": 16,
+      "objectiveid": 10,
       "isvisible": false
     },
     {
       "id": 8,
-      "objectiveid": 17,
+      "objectiveid": 15,
       "isvisible": false
     },
     {
       "id": 9,
-      "objectiveid": 12,
+      "objectiveid": 16,
       "isvisible": false
     }
   ],
-  "claimedobjectives": [],
+  "claimedobjectives": [
+    {
+      "id": 3,
+      "color": "red",
+      "objectiveid": 3
+    },
+    {
+      "id": 4,
+      "color": "black",
+      "objectiveid": 3
+    },
+    {
+      "id": 5,
+      "color": "green",
+      "objectiveid": 3
+    },
+    {
+      "id": 6,
+      "color": "blue",
+      "objectiveid": 3
+    },
+    {
+      "id": 7,
+      "color": "yellow",
+      "objectiveid": 3
+    },
+    {
+      "id": 8,
+      "color": "purple",
+      "objectiveid": 3
+    }
+  ],
   "playerscore": [
     {
       "id": 0,
       "color": "red",
-      "score": 0
+      "score": 1
     },
     {
       "id": 1,
       "color": "green",
-      "score": 0
+      "score": 1
     },
     {
       "id": 2,
       "color": "black",
-      "score": 0
+      "score": 1
     },
     {
       "id": 3,
       "color": "purple",
-      "score": 0
+      "score": 1
     },
     {
       "id": 4,
       "color": "blue",
-      "score": 0
+      "score": 1
     },
     {
       "id": 5,
       "color": "yellow",
-      "score": 0
+      "score": 1
     }
   ]
 }

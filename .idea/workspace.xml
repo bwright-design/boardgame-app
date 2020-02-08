@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="371264b1-e26c-43ca-8894-d0c2cb2248c1" name="Default Changelist" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/app.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/styles.scss" afterDir="false" />
+    <list default="true" id="371264b1-e26c-43ca-8894-d0c2cb2248c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/api/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/api/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/app.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/styles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581117046255</updated>
-      <workItem from="1581117047450" duration="2956000" />
+      <workItem from="1581117047450" duration="13550000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1581117330524</created>
@@ -65,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581117330524</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1581120154846</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581120154846</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
