@@ -373,68 +373,37 @@
       "isvisible": false
     }
   ],
-  "claimedobjectives": [
-    {
-      "id": 3,
-      "color": "red",
-      "objectiveid": 3
-    },
-    {
-      "id": 4,
-      "color": "black",
-      "objectiveid": 3
-    },
-    {
-      "id": 5,
-      "color": "green",
-      "objectiveid": 3
-    },
-    {
-      "id": 6,
-      "color": "blue",
-      "objectiveid": 3
-    },
-    {
-      "id": 7,
-      "color": "yellow",
-      "objectiveid": 3
-    },
-    {
-      "id": 8,
-      "color": "purple",
-      "objectiveid": 3
-    }
-  ],
+  "claimedobjectives": [],
   "playerscore": [
     {
       "id": 0,
       "color": "red",
-      "score": 1
+      "score": 0
     },
     {
       "id": 1,
       "color": "green",
-      "score": 1
+      "score": 0
     },
     {
       "id": 2,
       "color": "black",
-      "score": 1
+      "score": 0
     },
     {
       "id": 3,
       "color": "purple",
-      "score": 1
+      "score": 0
     },
     {
       "id": 4,
       "color": "blue",
-      "score": 1
+      "score": 0
     },
     {
       "id": 5,
       "color": "yellow",
-      "score": 1
+      "score": 0
     }
   ]
 }

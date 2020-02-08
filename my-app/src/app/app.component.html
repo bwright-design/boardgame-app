@@ -27,11 +27,11 @@
   </div>
 </section>
 
-<section>
+<!--<section> TODO: Add score tracker
   <div id="ti-score-tracker">
     <div class="number" *ngFor='let points of point(10) ;let i= index'>{{ i + 1 }}</div>
   </div>
-</section>
+</section>-->
 
 <section>
   <div class="obj-cards stage-two">
@@ -61,6 +61,27 @@
     </div>
   </div>
 </section>
+<section>
+  <div id="total-score">
+    <button class="new-game" title="New Game" (click)="this.chooseObjectives()"><i class="fas fa-plus"></i></button>
+    <div class="player" *ngFor="let score of scores">
+      <!--{{score.color}}-->
+      <div class="image" [ngClass]="score.color"></div>
+      <div class="score" [ngClass]="score.color">
+        <h1>{{score.score}}</h1>
+        <div class="controls">
+          <button (click)="claimobjectivescore(score,true)"><i class="fas fa-plus"></i></button><button (click)="claimobjectivescore(score,false)"><i class="fas fa-minus"></i></button>
+        </div>
+      </div>
+    </div>
+    <button class="new-obj" (click)="this.revealObjective()">
+      <div class="tiny-card">
+        <i class="fas fa-plus"></i>
+      </div>
+    </button>
+  </div>
+</section>
+
 
 <!-- WINDOW -->
 <!--<div class="window-wrap" *ngIf="window">
@@ -99,7 +120,7 @@
 
 
 
-
+<!--
 
 <h3>
 <table>
@@ -150,4 +171,4 @@
 <tr>
 <td><button (click)="this.chooseObjectives()">New Game</button></td><td><button (click)="this.revealObjective()">Reveal Objective</button></td>
 </tr>
-</table>
+</table>-->
