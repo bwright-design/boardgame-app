@@ -355,17 +355,17 @@
     {
       "id": 6,
       "objectiveid": 18,
-      "isvisible": false
+      "isvisible": true
     },
     {
       "id": 7,
       "objectiveid": 10,
-      "isvisible": false
+      "isvisible": true
     },
     {
       "id": 8,
       "objectiveid": 15,
-      "isvisible": false
+      "isvisible": true
     },
     {
       "id": 9,
