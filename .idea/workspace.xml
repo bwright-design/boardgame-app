@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="371264b1-e26c-43ca-8894-d0c2cb2248c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/my-app/api/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/api/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,6 +68,8 @@
       <option name="presentableId" value="Default" />
       <updated>1581117046255</updated>
       <workItem from="1581117047450" duration="21895000" />
+      <workItem from="1581518163276" duration="22000" />
+      <workItem from="1581545733676" duration="1860000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1581117330524</created>
@@ -103,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581183234825</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed spacing of cards">
+      <created>1581492244977</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581492244977</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +137,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="major html/css overhaul" />
     <MESSAGE value="added some responsiveness" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some responsiveness" />
+    <MESSAGE value="fixed spacing of cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed spacing of cards" />
   </component>
 </project>

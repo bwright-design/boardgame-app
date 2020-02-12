@@ -24,6 +24,18 @@
         </div>
       </div>
     </div>
+    <div class="add-new-card">
+      <div class="top">
+        <button (click)="this.revealObjective()">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+      <div class="bottom">
+        <button (click)="showWindow()">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -59,6 +71,18 @@
         </div>
       </div>
     </div>
+    <div class="add-new-card">
+      <div class="top">
+        <button (click)="this.revealObjective()">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+      <div class="bottom">
+        <button (click)="showWindow()">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
   </div>
 </section>
 <section>
@@ -84,33 +108,14 @@
 
 
 <!-- WINDOW -->
-<!--<div class="window-wrap" *ngIf="window">
+<div class="window-wrap" *ngIf="window">
   <div class="overlay" *ngIf="window" (click)="hideWindow()"></div>
   <section id="window" class="scale-in-center" *ngIf="window" (keypress)="handleInput($event)">
     <div class="wrap">
       <button class="close-btn" (click)="hideWindow()"><i class="fas fa-times"></i></button>
-      <div class="card-display">
-        <div class="card">
-          <div class="stars"></div>
-          <div class="card-objs">
-            <div class="card-header">
-              {{i}}
-              {{ objective.name }}
-              {{this.getIsVisible(objective.id)}}
-            </div>
-            <div class="card-body">
-              {{ objective.condition }}
-            </div>
-            <div class="points">
-              {{ objective.points }}
-            </div>
-            <div class="card-footer">
-              victory points
-            </div>
-          </div>
-        </div>
-      </div>
-
+      Choose Objective Card
+      <input type="text" id="default">
+      <button>Add</button>
     </div>
   </section>
-</div>-->
+</div>

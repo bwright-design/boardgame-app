@@ -51,6 +51,31 @@ section{
     flex-flow:row wrap;
     justify-content: space-around;
     width: calc(100% - 50px);
+    .add-new-card{
+      width:100px;
+      height:250px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .top{
+        height:80%;
+        width:100%;
+        button{
+          text-align: center;
+          width: 100%;
+          height:100%;
+        }
+      }
+      .bottom{
+        height:20%;
+        width:100%;
+        button{
+          text-align: center;
+          width: 100%;
+          height:100%;
+        }
+      }
+    }
   }
 }
 
