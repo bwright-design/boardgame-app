@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="371264b1-e26c-43ca-8894-d0c2cb2248c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/service/claimedobjective.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/service/fake-teams.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/service/message.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/service/message.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/service/objective.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/service/objective.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/service/objective.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/service/playerscore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/service/setobjective.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/service/team.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/service/team.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/service/team.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/shared/navigation/navigation.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/shared/navigation/navigation.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/shared/navigation/navigation.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/shared/navigation/navigation.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/api/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/api/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

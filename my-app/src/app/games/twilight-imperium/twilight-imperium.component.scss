@@ -49,7 +49,7 @@ section{
   .obj-cards{
     display:flex;
     flex-flow:row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: calc(100% - 50px);
   }
 }
