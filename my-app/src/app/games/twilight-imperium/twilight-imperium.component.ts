@@ -21,6 +21,8 @@ export class TwilightImperiumComponent {
 
   private scoresSubscription: AnonymousSubscription;
   private claimedSubscription: AnonymousSubscription;
+  private objectivesSubscription: AnonymousSubscription;
+  private setobjectivesSubscription: AnonymousSubscription;
   debug = false;
   visibleobj: Objective[] = [];
   stgonevisibleobj: Objective[] = [];
@@ -33,7 +35,7 @@ export class TwilightImperiumComponent {
   chosenObjectivesStgOne: Objective[] = [];
   chosenObjectivesStgTwo: Objective[] = [];
   randoms: any[] = [];
-
+ 
   //BRIANS
   point = Array;
   window = false;
@@ -202,7 +204,6 @@ export class TwilightImperiumComponent {
 
   getClaimedObjectives()
   {
-    this.claimed = [];
     this.refreshClaims();
   }
 
@@ -227,11 +228,9 @@ export class TwilightImperiumComponent {
   }
 
   getObjectives(): void {
-    this.objectiveService.getObjectives()
-      .subscribe(objectives => this.objectives = objectives);
+    this.refreshObjectives();
 
-    this.objectiveService.getSetObjectives()
-      .subscribe(objectives => this.processSetObjectives( objectives ) );
+    this.refreshSetObjectives();
 
     this.getClaimedObjectives();
 
@@ -357,12 +356,34 @@ export class TwilightImperiumComponent {
     //this.objectiveService.addSetObjective(this.chosenobjectives[0]).subscribe();
     //.subscribe();
   }
+  
+  private refreshObjectives(): void {
+    this.objectivesSubscription = this.objectiveService.getObjectives().subscribe(objectivesub => {
+      this.objectives = objectivesub;
+      this.subscribeToObjectives();
+    });
+  }
+  
+  private refreshSetObjectives(): void {
+    this.setobjectivesSubscription = this.objectiveService.getSetObjectives().subscribe(setobjectivesub => {
+      this.processSetObjectives( setobjectivesub );
+      this.subscribeToSetObjectives();
+    });
+  }
 
   private refreshScores(): void {
     this.scoresSubscription = this.objectiveService.getPlayerScores().subscribe(scoresub => {
       this.scores = scoresub;
       this.subscribeToScores();
     });
+  }
+
+  private subscribeToObjectives(): void {
+    this.objectivesSubscription = Observable.timer(2000).first().subscribe(() => this.refreshObjectives());
+  }
+  
+  private subscribeToSetObjectives(): void {
+    this.setobjectivesSubscription = Observable.timer(2000).first().subscribe(() => this.refreshSetObjectives());
   }
 
   private subscribeToScores(): void {
@@ -390,6 +411,7 @@ export class TwilightImperiumComponent {
   {
     this.scoresSubscription.unsubscribe();
     this.claimedSubscription.unsubscribe();
+	this.objectivesSubscription.unsubscribe();
   }
 
 }
