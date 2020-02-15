@@ -347,6 +347,8 @@ export class TwilightImperiumComponent {
 	var stgonevisiblelocal = [];
 	var stgtwovisiblelocal = [];
 	
+	var anyvisible = false;
+	
     for( var i=0;i<setobjectives.length;i++ )
     {
       var isvisibleobj = setobjectives[i].isvisible;
@@ -357,6 +359,7 @@ export class TwilightImperiumComponent {
         if( isvisibleobj )
         {
           stgonevisiblelocal.push( this.objectives[setobjectives[i].objectiveid] );
+		  anyvisible = true;
         }
       }
       else
@@ -365,6 +368,7 @@ export class TwilightImperiumComponent {
         if( isvisibleobj )
         {
           stgtwovisiblelocal.push( this.objectives[setobjectives[i].objectiveid] );
+		  anyvisible = true;
         }
       }
 
@@ -400,6 +404,13 @@ export class TwilightImperiumComponent {
 			this.stgtwovisibleobj.push( stgtwovisiblelocal[a] );
 			this.visibleobj.push( stgtwovisiblelocal[a] );
 		}
+	}
+	
+	if( !anyvisible )
+	{
+		this.visibleobj = [];
+		this.stgonevisibleobj = [];
+		this.stgtwovisibleobj = [];
 	}
   }
 
