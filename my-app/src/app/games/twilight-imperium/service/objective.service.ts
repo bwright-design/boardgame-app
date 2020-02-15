@@ -102,12 +102,20 @@ export class ObjectiveService {
 		  var thisobj: SetObjective = {
 			id: i,
 			objectiveid: setobjectives[i].id,
-			isvisible: false
+			isvisible: false,
+			isextra: false
 		  };
 		  this.http.put(`${this.setObjectivesURL}/${i}`, thisobj, httpOptions).pipe(
 			tap( (newobj: SetObjective) => this.log(`updated objective id=${newobj.id} oid=${newobj.objectiveid}`)),
 			catchError(this.handleError<any>('updateObjective'))).subscribe();
 	  }
+	}
+
+	/** POST: add the set objective on the server */
+	addSetObjective (setobjective: SetObjective): Observable<SetObjective> {
+		  return this.http.post(this.setObjectivesURL, setobjective, httpOptions).pipe(
+			tap( (newobj: SetObjective) => this.log(`updated set objective id=${newobj.id} oid=${newobj.objectiveid}`)),
+			catchError(this.handleError<any>('addSetObjective')));
 	}
 
 	/** PUT: update the playerscore objective on the server */
@@ -123,7 +131,8 @@ export class ObjectiveService {
 		  var thisobj: SetObjective = {
 			id: rid,
 			objectiveid: oid,
-			isvisible: isv
+			isvisible: isv,
+			isextra: false
 		  };
 		  return this.http.put(`${this.setObjectivesURL}/${rid}`, thisobj, httpOptions).pipe(
 			tap( (newobj: SetObjective) => this.log(`updated objective id=${newobj.id} oid=${newobj.objectiveid}`)),
@@ -136,6 +145,17 @@ export class ObjectiveService {
 		  return this.http.post(this.claimedObjectivesURL, claimed, httpOptions).pipe(
 			tap( (newobj: ClaimedObjective) => this.log(`updated claimed objective id=${newobj.id} color=${newobj.color} oid=${newobj.objectiveid}`)),
 			catchError(this.handleError<any>('addClaimedObjective')));
+	}
+
+	/** delete: delete the claimed objective on the server */
+	deleteExtraObjective (extras: SetObjective[]): void {
+		for( var i=0;i<extras.length;i++ )
+		{
+	  //this.log( `now sending id=${setobjective.id} oid=${setobjective.objectiveid}` );
+		  this.http.delete(`${this.setObjectivesURL}/${extras[i].id}`, httpOptions).pipe(
+			tap( (newobj: SetObjective) => this.log(`deleted extra objective id=${newobj.id} oid=${newobj.objectiveid}`)),
+			catchError(this.handleError<any>('deleteSetObjective'))).subscribe();
+		}
 	}
 
 	/** delete: delete the claimed objective on the server */

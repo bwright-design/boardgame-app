@@ -1,3 +1,11 @@
+<div *ngIf="messageService.messages.length && debug">
+
+  <h2>Messages</h2>
+  <button class="clear"
+          (click)="messageService.clear()">clear</button>
+  <div *ngFor='let message of messageService.messages'> <font color="red">{{message}}</font> </div>
+
+</div>
 <div class="stars"></div>
 <section>
   <div class="obj-cards stage-one">
@@ -26,7 +34,7 @@
     </div>
     <div class="add-new-card">
       <div class="top">
-        <button (click)="this.revealObjective()">
+        <button (click)="this.revealStageOneObjective()">
           <i class="fas fa-plus"></i>
         </button>
       </div>
@@ -73,7 +81,7 @@
     </div>
     <div class="add-new-card">
       <div class="top">
-        <button (click)="this.revealObjective()">
+        <button (click)="this.revealStageTwoObjective()">
           <i class="fas fa-plus"></i>
         </button>
       </div>
