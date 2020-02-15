@@ -1,1 +1,6 @@
-<button routerLink="/ti" routerLinkActive="active">twilight imperium</button>
+<button (click)="showNav()" class="nav-btn"><i class="fas fa-bars"></i></button>
+
+<div id="nav" *ngIf="nav">
+  <button (click)="showNav()" class="close-nav"><i class="fas fa-times"></i></button>
+  <button routerLink="/ti" routerLinkActive="active">twilight imperium</button>
+</div>
