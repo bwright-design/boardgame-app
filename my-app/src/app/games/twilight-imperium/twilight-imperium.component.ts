@@ -24,6 +24,7 @@ export class TwilightImperiumComponent {
   private objectivesSubscription: AnonymousSubscription;
   private setobjectivesSubscription: AnonymousSubscription;
   debug = false;
+  testing = 0;
   visibleobj: Objective[] = [];
   stgonevisibleobj: Objective[] = [];
   stgtwovisibleobj: Objective[] = [];
@@ -121,6 +122,7 @@ export class TwilightImperiumComponent {
         pos = this.claimed[i].id;
       }
     }
+	
     return pos;
   }
 
@@ -336,11 +338,15 @@ export class TwilightImperiumComponent {
     {
     this.log( `id=${setobjectives[i].id} oid=${setobjectives[i].objectiveid} visible=${setobjectives[i].isvisible}` );
     }*/
+	
     this.chosenObjectivesStgOne = [];
     this.chosenObjectivesStgTwo = [];
-    this.visibleobj = [];
-    this.stgonevisibleobj = [];
-    this.stgtwovisibleobj = [];
+    //this.visibleobj = [];
+    //this.stgonevisibleobj = [];
+    //this.stgtwovisibleobj = [];
+	var stgonevisiblelocal = [];
+	var stgtwovisiblelocal = [];
+	
     for( var i=0;i<setobjectives.length;i++ )
     {
       var isvisibleobj = setobjectives[i].isvisible;
@@ -350,7 +356,7 @@ export class TwilightImperiumComponent {
         this.chosenObjectivesStgOne.push( this.objectives[setobjectives[i].objectiveid] );
         if( isvisibleobj )
         {
-          this.stgonevisibleobj.push( this.objectives[setobjectives[i].objectiveid] );
+          stgonevisiblelocal.push( this.objectives[setobjectives[i].objectiveid] );
         }
       }
       else
@@ -358,15 +364,43 @@ export class TwilightImperiumComponent {
         this.chosenObjectivesStgTwo.push( this.objectives[setobjectives[i].objectiveid] );
         if( isvisibleobj )
         {
-          this.stgtwovisibleobj.push( this.objectives[setobjectives[i].objectiveid] );
+          stgtwovisiblelocal.push( this.objectives[setobjectives[i].objectiveid] );
         }
       }
 
-      if( setobjectives[i].isvisible )
+      /*if( setobjectives[i].isvisible )
       {
         this.visibleobj.push( this.objectives[setobjectives[i].objectiveid] );
-      }
+      }*/
     }
+	
+	for( var a=0;a<stgonevisiblelocal.length;a++ )
+	{
+		var tobeadded = true;
+		for( var b=0;b<this.stgonevisibleobj.length;b++ )
+		{
+			tobeadded = tobeadded && this.stgonevisibleobj[b].id != stgonevisiblelocal[a].id;
+		}
+		if( tobeadded )
+		{
+			this.stgonevisibleobj.push( stgonevisiblelocal[a] );
+			this.visibleobj.push( stgonevisiblelocal[a] );
+		}
+	}
+
+	for( var a=0;a<stgtwovisiblelocal.length;a++ )
+	{
+		var tobeadded = true;
+		for( var b=0;b<this.stgtwovisibleobj.length;b++ )
+		{
+			tobeadded = tobeadded && this.stgtwovisibleobj[b].id != stgtwovisiblelocal[a].id;
+		}
+		if( tobeadded )
+		{
+			this.stgtwovisibleobj.push( stgtwovisiblelocal[a] );
+			this.visibleobj.push( stgtwovisiblelocal[a] );
+		}
+	}
   }
 
   test(){
