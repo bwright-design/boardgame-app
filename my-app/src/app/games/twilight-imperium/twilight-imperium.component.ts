@@ -77,6 +77,33 @@ export class TwilightImperiumComponent {
       }
     }
   }
+  
+  parseObjectivesTwice(): void {
+	  for( var i=0;i<this.objectivesStgOne.length;i++ )
+	  {
+		  var test = false;
+		  for( var a=0;a<this.chosenObjectivesStgOne.length;a++ )
+		  {
+			  test = test || this.chosenObjectivesStgOne[a].id == this.objectivesStgOne[i].id;
+		  }
+		  if( test )
+		  {
+			  this.objectivesStgOne.splice(i,1);
+		  }
+	  }
+	  for( var i=0;i<this.objectivesStgTwo.length;i++ )
+	  {
+		  var test = false;
+		  for( var a=0;a<this.chosenObjectivesStgTwo.length;a++ )
+		  {
+			  test = test || this.chosenObjectivesStgTwo[a].id == this.objectivesStgTwo[i].id;
+		  }
+		  if( test )
+		  {
+			  this.objectivesStgTwo.splice(i,1);
+		  }
+	  }
+  }
 
   getIsClaimed(color: string, id: number, pos: number) : boolean
   {
@@ -207,22 +234,79 @@ export class TwilightImperiumComponent {
     this.refreshClaims();
   }
 
-  revealObjective()
+  revealStageOneObjective()
   {
-    if( confirm("Are you sure you want to reveal the next objective?") )
+    if( confirm("Are you sure you want to reveal the next stage one objective?") )
     {
-      var nextobj = this.visibleobj.length;
+      var nextobj = this.stgonevisibleobj.length;
       if( nextobj < 5 )
       {
         this.visibleobj.push( this.chosenObjectivesStgOne[nextobj] );
         this.stgonevisibleobj.push( this.chosenObjectivesStgOne[nextobj] );
         this.objectiveService.setRevealedObj(nextobj, this.chosenObjectivesStgOne[nextobj].id, true ).subscribe();
       }
-      else if( nextobj < 10 )
+      else if( confirm("All 5 stage one objectives have been revealed, are you sure you want to reveal a stage one objective?") )
       {
-        this.visibleobj.push( this.chosenObjectivesStgTwo[nextobj-5] );
-        this.stgtwovisibleobj.push( this.chosenObjectivesStgTwo[nextobj-5] );
-        this.objectiveService.setRevealedObj(nextobj, this.chosenObjectivesStgTwo[nextobj-5].id, true ).subscribe();
+		this.getRandomStgOneObjective();
+		var rndobj = this.chosenObjectivesStgOne[ this.chosenObjectivesStgOne.length - 1 ];
+		this.visibleobj.push( rndobj );
+		this.stgonevisibleobj.push( rndobj );
+		var thisobj: SetObjective = {
+				id: this.chosenObjectivesStgOne.length + this.chosenObjectivesStgTwo.length,
+				objectiveid: this.chosenObjectivesStgOne[ this.chosenObjectivesStgOne.length - 1 ].id,
+				isvisible: true,
+				isextra: true
+			};
+		this.objectiveService.addSetObjective(thisobj).subscribe();
+      }
+    }
+  }
+
+  revealStageTwoObjective()
+  {
+    if( confirm("Are you sure you want to reveal the next stage two objective?") )
+    {
+      var nextobj = this.stgonevisibleobj.length;
+	  var lastobj = this.stgtwovisibleobj.length;
+      if( nextobj < 5 || lastobj >= 5 )
+      {
+		var cont = true;
+		if( nextobj < 5 )
+		{
+			if( !confirm("Not all 5 stage one objectives have been revealed, are you sure you want to reveal a stage two objective?") )
+			{
+				cont = false;
+			}
+		}
+		if( lastobj >= 5 )
+		{
+			if( !confirm("All 5 stage two objectives have been revealed, are you sure you want to reveal a stage two objective?") )
+			{
+				cont = false;
+			}
+		}
+		if( cont )
+		{
+			this.getRandomStgTwoObjective();
+			var rndobj = this.chosenObjectivesStgTwo[ this.chosenObjectivesStgTwo.length - 1 ];
+			this.visibleobj.push( rndobj );
+			this.stgtwovisibleobj.push( rndobj );
+			var thisobj: SetObjective = {
+				id: this.chosenObjectivesStgOne.length + this.chosenObjectivesStgTwo.length,
+				objectiveid: rndobj.id,
+				isvisible: true,
+				isextra: true
+			};
+			this.objectiveService.addSetObjective(thisobj).subscribe();
+		}
+      }
+      else
+      {
+		nextobj = this.stgtwovisibleobj.length;
+        this.visibleobj.push( this.chosenObjectivesStgTwo[nextobj] );
+        this.stgtwovisibleobj.push( this.chosenObjectivesStgTwo[nextobj] );
+		//this.log(`id=${nextobj}`);
+        this.objectiveService.setRevealedObj(nextobj+5, this.chosenObjectivesStgTwo[nextobj].id, true ).subscribe();
       }
     }
   }
@@ -260,7 +344,8 @@ export class TwilightImperiumComponent {
     for( var i=0;i<setobjectives.length;i++ )
     {
       var isvisibleobj = setobjectives[i].isvisible;
-      if( i < 5 )
+	  var isstgoneobj = this.objectives[setobjectives[i].objectiveid].stage == 1;
+      if( isstgoneobj )
       {
         this.chosenObjectivesStgOne.push( this.objectives[setobjectives[i].objectiveid] );
         if( isvisibleobj )
@@ -295,6 +380,7 @@ export class TwilightImperiumComponent {
   {
     var i = Math.floor((Math.random() * this.objectivesStgOne.length));
     var objqueued = this.objectivesStgOne[i];
+	this.log(`adding id=${i} length=${this.objectivesStgOne.length} totalobj=${this.objectives.length}`);
     this.chosenObjectivesStgOne.push( objqueued );
     this.objectivesStgOne.splice(i,1);
   }
@@ -303,6 +389,7 @@ export class TwilightImperiumComponent {
   {
     var i = Math.floor((Math.random() * this.objectivesStgTwo.length));
     var objqueued = this.objectivesStgTwo[i];
+	this.log(`adding id=${i} length=${this.objectivesStgOne.length} totalobj=${this.objectives.length}`);
     this.chosenObjectivesStgTwo.push( objqueued );
     this.objectivesStgTwo.splice(i,1);
   }
@@ -330,6 +417,17 @@ export class TwilightImperiumComponent {
   chooseObjectives(): void {
     if( confirm("Are you sure you want to start a new game?") )
     {
+	  this.objectiveService.getSetObjectives().subscribe(setobjectivesub => {
+		var extraset = [];
+		for( var i=0;i<setobjectivesub.length;i++ )
+		{
+			if( setobjectivesub[i].isextra )
+			{
+				extraset.push( setobjectivesub[i] );
+			}
+		}
+		this.objectiveService.deleteExtraObjective(extraset);
+	  });
       this.chosenObjectivesStgOne = [];
       this.chosenObjectivesStgTwo = [];
       this.objectivesStgOne = [];
@@ -360,6 +458,8 @@ export class TwilightImperiumComponent {
   private refreshObjectives(): void {
     this.objectivesSubscription = this.objectiveService.getObjectives().subscribe(objectivesub => {
       this.objectives = objectivesub;
+	  this.parseObjectives();
+	  this.parseObjectivesTwice();
       this.subscribeToObjectives();
     });
   }
