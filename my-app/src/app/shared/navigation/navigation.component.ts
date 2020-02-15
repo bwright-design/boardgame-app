@@ -11,5 +11,10 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit() {
   }
+  nav = false;
+
+  showNav() {
+    this.nav = !this.nav;
+  }
 
 }

@@ -1,0 +1,28 @@
+.nav-btn{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 999;
+}
+#nav{
+  position: fixed;
+  top:0;
+  left:0;
+  width:200px;
+  height:100vh;
+  z-index: 999;
+  background-color:black;
+  padding-top:40px;
+  .close-nav{
+    position: absolute;
+    top:0;
+    right:0;
+    width:40px;
+    height:40px;
+    margin:0;
+  }
+  button{
+    width:100%;
+    margin-top:10px;
+  }
+}

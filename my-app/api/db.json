@@ -324,53 +324,69 @@
   "setobjectives": [
     {
       "id": 0,
-      "objectiveid": 0,
-      "isvisible": true
+      "objectiveid": 2,
+      "isvisible": true,
+      "isextra": false
     },
     {
       "id": 1,
-      "objectiveid": 9,
-      "isvisible": true
+      "objectiveid": 3,
+      "isvisible": true,
+      "isextra": false
     },
     {
       "id": 2,
-      "objectiveid": 3,
-      "isvisible": true
+      "objectiveid": 4,
+      "isvisible": true,
+      "isextra": false
     },
     {
       "id": 3,
-      "objectiveid": 6,
-      "isvisible": true
+      "objectiveid": 0,
+      "isvisible": true,
+      "isextra": false
     },
     {
       "id": 4,
-      "objectiveid": 4,
-      "isvisible": true
+      "objectiveid": 7,
+      "isvisible": true,
+      "isextra": false
     },
     {
       "id": 5,
-      "objectiveid": 11,
-      "isvisible": true
+      "objectiveid": 19,
+      "isvisible": false,
+      "isextra": false
     },
     {
       "id": 6,
       "objectiveid": 18,
-      "isvisible": true
+      "isvisible": true,
+      "isextra": false
     },
     {
       "id": 7,
-      "objectiveid": 10,
-      "isvisible": true
+      "objectiveid": 13,
+      "isvisible": true,
+      "isextra": false
     },
     {
       "id": 8,
       "objectiveid": 15,
-      "isvisible": true
+      "isvisible": true,
+      "isextra": false
     },
     {
       "id": 9,
+      "objectiveid": 12,
+      "isvisible": true,
+      "isextra": false
+    },
+    {
+      "id": 11,
       "objectiveid": 16,
-      "isvisible": false
+      "isvisible": true,
+      "isextra": true
     }
   ],
   "claimedobjectives": [],

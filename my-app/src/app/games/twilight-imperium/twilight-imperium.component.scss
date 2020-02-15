@@ -1,4 +1,3 @@
-
 // TI Styles //
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
@@ -43,36 +42,156 @@ $yellow:#FFC014;
     box-shadow: stars(500, 1800px);
   }
 }
+
+#top-bar{
+  position: relative;
+  height:30px;
+  padding:0 20px;
+  background-color:$black;
+  //border-bottom: 1px solid rgba(255, 255, 255, 1);
+  border-bottom:1px solid rgba(230, 56, 56, 0.5);
+  //filter: drop-shadow( 0px 0px 10px #d41010);
+  box-shadow: inset 0px -12px 28px -16px rgba(230, 56, 56, 0.5);
+  .buttons{
+    position: absolute;
+    right:0;
+    top:0;
+    display: flex;
+    flex-flow: row nowrap;
+    .new-game, .wiki{
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      height:30px;
+      padding:0 10px;
+      border:none;
+      font-size:10px;
+      background-color: transparent;
+      color: rgba(255, 255, 255, 0.4);
+      align-self: flex-end;
+      &:hover{
+        box-shadow: inset 0px -12px 28px -16px rgba(230, 56, 56, 0.5);
+        color: rgba(255, 255, 255, 0.8);
+      }
+      i{
+        margin-right:10px;
+        &:before{
+          font-size:10px;
+        }
+      }
+    }
+  }
+}
 section{
   padding:30px;
+  position: relative;
+  overflow:hidden;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   .obj-cards{
     display:flex;
     flex-flow:row wrap;
     justify-content: space-around;
     width: calc(100% - 50px);
+    &.stage-one{
+      .add-new-card {
+        background-color: rgba(238, 164, 29, 0.05);
+        box-shadow: 0 0 10px 1px $yellow-glow;
+        border: 1px solid $yellow-glow;
+        .top {
+          i{
+            color:$yellow-glow;
+            border:1px solid $yellow-glow;
+          }
+          &:hover{
+            box-shadow: inset 0px 0px 20px 0px $yellow-glow;
+          }
+        }
+        .bottom{
+          color:$yellow-glow;
+          &:hover{
+            box-shadow: inset 0px 0px 20px 0px $yellow-glow;
+          }
+        }
+      }
+    }
+    &.stage-two{
+      .add-new-card {
+        background-color: rgba(1, 9, 38, 0.4);
+        box-shadow: 0 0 10px 1px $blue-glow;
+        border: 1px solid $blue-glow;
+        .top {
+          i{
+            color:$blue-glow;
+            border:1px solid $blue-glow;
+          }
+          &:hover{
+            box-shadow: inset 0px 0px 20px 0px $blue-glow;
+          }
+        }
+        .bottom{
+          color:$blue-glow;
+          &:hover{
+            box-shadow: inset 0px 0px 20px 0px $blue-glow;
+          }
+        }
+      }
+    }
     .add-new-card{
-      width:100px;
-      height:250px;
+      position: relative;
+      margin-left:20px;
       display: flex;
+      justify-content: center;
+      max-width:200px;
+      min-width:180px;
+      flex-grow: 1;
+      height:250px;
       flex-direction: column;
       text-align: center;
       .top{
-        height:80%;
+        height:85%;
         width:100%;
-        button{
-          text-align: center;
-          width: 100%;
-          height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        @extend %card-accent;
+        @extend %card-accent-top;
+        i{
+          display: flex;
+          justify-content: center;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          &:before{
+            align-self: center;
+          }
         }
       }
       .bottom{
-        height:20%;
+        height:15%;
         width:100%;
-        button{
-          text-align: center;
-          width: 100%;
-          height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 12px;
+        @extend %card-accent;
+        @extend %card-accent-bottom;
+      }
+      &:nth-child(n+6) {
+        &.add-new-card{
+          position: absolute;
+          top:30px;
+          right:0;
+          width:40px;
+          max-width:40px;
+          min-width: 40px;
+          border-width: 1px 0 1px 1px;
+          .top{
+            i{
+              position: absolute;
+            }
+          }
         }
       }
     }
@@ -399,16 +518,6 @@ section{
   flex-flow:row wrap;
   //border-top:2px solid rgba(255, 255, 255, 0.2);
   margin:0 -30px;
-  .new-game{
-    position: absolute;
-    top:-40px;
-    right:0;
-    height:40px;
-    width:40px;
-    border:none;
-    background-color: transparent;
-    color:#ffffff;
-  }
   .new-obj{
     border:none;
     background-color: rgba(86, 109, 207, 0.20);
