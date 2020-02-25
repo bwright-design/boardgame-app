@@ -42,9 +42,9 @@
       <div class="top" (click)="this.revealStageOneObjective()">
           <i class="fas fa-plus"></i>
       </div>
-      <div class="bottom" (click)="showWindow()">
+      <!--<div class="bottom" (click)="showWindow()">
           <i class="fas fa-search"></i>
-      </div>
+      </div>-->
     </div>
   </div>
 </section>
@@ -61,7 +61,7 @@
       <div class="stars"></div>
       <div class="card-objs">
         <div class="card-header">
-          {{i}}
+          <!--{{i}}-->
           {{ objective.name }}
           <!--{{this.getIsVisible(objective.id)}}-->
         </div>
@@ -85,9 +85,9 @@
       <div class="top" (click)="this.revealStageTwoObjective()">
         <i class="fas fa-plus"></i>
       </div>
-      <div class="bottom" (click)="showWindow()">
+      <!--<div class="bottom" (click)="showWindow()">
         <i class="fas fa-search"></i>
-      </div>
+      </div>-->
     </div>
   </div>
 </section>
@@ -115,7 +115,7 @@
 <!-- WINDOW -->
 <div class="window-wrap" *ngIf="window">
   <div class="overlay" *ngIf="window" (click)="hideWindow()"></div>
-  <section id="window" class="scale-in-center" *ngIf="window" (keypress)="handleInput($event)">
+  <section id="window" class="scale-in-center" *ngIf="window" <!--(keypress)="handleInput($event)"-->>
     <div class="wrap">
       <button class="close-btn" (click)="hideWindow()"><i class="fas fa-times"></i></button>
       Choose Objective Card
