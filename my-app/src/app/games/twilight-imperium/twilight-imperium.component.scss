@@ -12,6 +12,15 @@ $purple:#25145E;
 $blue:#003363;
 $yellow:#FFC014;
 
+@font-face {
+  font-family: 'handel_gothic_dbold';
+  src: url('ti-assets/fonts/handel_gothic_d_bold-webfont.woff2') format('woff2'),
+  url('ti-assets/fonts/handel_gothic_d_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 @function alphaRandom(){
   @return random(1000)*.001;
 }
@@ -90,7 +99,7 @@ section{
   .obj-cards{
     display:flex;
     flex-flow:row wrap;
-    justify-content: space-around;
+    justify-content: center;
     width: calc(100% - 50px);
     &.stage-one{
       .add-new-card {
@@ -207,7 +216,7 @@ section{
   top: 10%;
   backdrop-filter: blur(5px);
   flex-grow: 1;
-  margin-bottom:60px;
+  margin:20px;
   .stars{
     width:100%;
     height:100%;
@@ -236,42 +245,60 @@ section{
     height:100%;
     margin-bottom:120px;
     .card-header{
+      //background-color:blue;
       font-weight: 900;
-      font-family: 'Orbitron', Helvetica, Arial, sans-serif;
+      font-family: 'HandelGothicDBold', Helvetica, Arial, sans-serif;
       font-size:20px;
-      line-height:26px;
+      line-height:24px;
       display: flex;
       position: relative;
       text-transform: uppercase;
-      padding:10px 20px;
+      height:60px;
+      align-items: center;
       z-index:2;
-      border-radius:10px;
+      //border-radius:10px;
       margin-bottom:4px;
       text-align:center;
-      flex-grow:1;
+      justify-content: center;
+      padding:0 10px;
+      border-bottom: 1px solid $yellow-glow;
     }
     .card-body{
-      flex-grow: 2;
+      //background-color:green;
+      display: flex;
+      height:100px;
+      //flex-grow: 2;
       font-weight: 600;
       font-size:16px;
       line-height:20px;
       color:#ffffff;
       padding:20px;
+      align-items: center;
       text-align:center;
     }
     .points{
-      position: absolute;
-      top: 0;
-      right: -50px;
-      height: 40px;
-      width: 40px;
+      //position: absolute;
+      //top: 0;
+      //right: -50px;
+      position: relative;
+      height: 60px;
       line-height: 40px;
-      background-color: transparent;
       color: #ffffff;
       border: none;
-      font-size: 20px;
-      text-align: center;
-      &:after {
+      font-size: 28px;
+      width:100%;
+      span{
+        width:60px;
+        height:60px;
+        border-radius: 50%;
+        //background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+      }
+      /*&:after {
         content: "";
         position: absolute;
         top: 32px;
@@ -287,7 +314,7 @@ section{
         left: 9px;
         width: 10px;
         height: 40px;
-      }
+      }*/
     }
     .card-footer{
       position: absolute;
@@ -430,16 +457,21 @@ section{
       background-color: rgba(238, 164, 29, 0.05);
       box-shadow: 0 0 10px 1px $yellow-glow;
       border: 1px solid $yellow-glow;
+      .card-header, .card-body{
+        border-bottom: 1px solid $yellow-glow;
+      }
       @extend %card-accent;
       @extend %card-accent-bottom;
       .points{
-        border-right: 1px solid $yellow-glow;
-        &:after {
+        span{
+          border: 1px solid $yellow-glow;
+        }
+        /*&:after {
           border-bottom: 1px solid $yellow-glow;
         }
         &:before {
           border-right: 1px solid $yellow-glow;
-        }
+        }*/
       }
     }
   }
@@ -453,16 +485,21 @@ section{
       border: 1px solid $blue-glow;
       background-color: rgba(1, 9, 38, 0.4);
       box-shadow: 0 0 10px 1px $blue-glow;
+      .card-header, .card-body{
+        border-bottom: 1px solid $blue-glow;
+      }
       @extend %card-accent;
       @extend %card-accent-bottom;
       .points{
-        border-right: 1px solid $blue-glow;
-        &:after {
+        span{
+          border: 1px solid $blue-glow;
+        }
+       /* &:after {
           border-bottom: 1px solid $blue-glow;
         }
         &:before {
           border-right: 1px solid $blue-glow;
-        }
+        }*/
       }
     }
   }
@@ -597,6 +634,8 @@ section{
         display: flex;
         flex-flow: row nowrap;
         button{
+          display: flex;
+          align-items: center;
           border:none;
           background-color: transparent;
           color:#ffffff;

@@ -5,4 +5,5 @@ export class Objective {
 	points: number;
 	stage: number;
 	phase: number;
+	pok: boolean;
 }

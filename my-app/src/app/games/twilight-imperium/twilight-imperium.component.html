@@ -19,14 +19,14 @@
       <div class="stars"></div>
       <div class="card-objs">
         <div class="card-header">
-          {{ objective.name }}
+          {{objective.name}}
           <!--{{this.getIsVisible(objective.id)}}-->
         </div>
         <div class="card-body">
-          {{ objective.condition }}
+          {{objective.condition}}
         </div>
         <div class="points">
-          {{ objective.points }}
+          <span>{{objective.points}}</span>
         </div>
         <div class="card-footer">
           <button (click)="this.claimobjective('red',objective.id)" [class.redselected]="getIsClaimed('red',objective.id,0)" [class.red]="!getIsClaimed('red',objective.id,0)" class="button red"></button>
@@ -69,7 +69,7 @@
           {{ objective.condition }}
         </div>
         <div class="points">
-          {{ objective.points }}
+          <span>{{ objective.points }}</span>
         </div>
         <div class="card-footer">
           <button (click)="this.claimobjective('red',objective.id)" [class.redselected]="getIsClaimed('red',objective.id,0)" [class.red]="!getIsClaimed('red',objective.id,0)" class="button red"></button>
