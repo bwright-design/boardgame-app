@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="371264b1-e26c-43ca-8894-d0c2cb2248c1" name="Default Changelist" comment="fixed spacing of cards">
+    <list default="true" id="371264b1-e26c-43ca-8894-d0c2cb2248c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/ArgentFlight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/Empyrean.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/MahactGeneSorcerers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/NaazRokhaAlliance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/Nomad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/TitansofUl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/Vuil'RaithCabal.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/api/data/objectives.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/api/data/objectives.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/api/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/api/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581492244977</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added new objs">
+      <created>1628350134992</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1628350134992</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +164,7 @@
     <MESSAGE value="major html/css overhaul" />
     <MESSAGE value="added some responsiveness" />
     <MESSAGE value="fixed spacing of cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed spacing of cards" />
+    <MESSAGE value="added new objs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new objs" />
   </component>
 </project>
