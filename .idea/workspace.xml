@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="371264b1-e26c-43ca-8894-d0c2cb2248c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/ArgentFlight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/Empyrean.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/MahactGeneSorcerers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/NaazRokhaAlliance.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/Nomad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/TitansofUl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/ti-assets/Vuil'RaithCabal.png" afterDir="false" />
+    <list default="true" id="371264b1-e26c-43ca-8894-d0c2cb2248c1" name="Default Changelist" comment="new images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/api/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/api/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,6 +84,12 @@
       <workItem from="1581545733676" duration="1860000" />
       <workItem from="1628130272399" duration="1312000" />
       <workItem from="1628313050849" duration="5970000" />
+      <workItem from="1628514463478" duration="23000" />
+      <workItem from="1632195602003" duration="440000" />
+      <workItem from="1632197702854" duration="106000" />
+      <workItem from="1632197922056" duration="23000" />
+      <workItem from="1633662305251" duration="83000" />
+      <workItem from="1633662391188" duration="10145000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1581117330524</created>
@@ -139,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628350134992</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="new images">
+      <created>1628350658007</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1628350658007</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +173,7 @@
     <MESSAGE value="added some responsiveness" />
     <MESSAGE value="fixed spacing of cards" />
     <MESSAGE value="added new objs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new objs" />
+    <MESSAGE value="new images" />
+    <option name="LAST_COMMIT_MESSAGE" value="new images" />
   </component>
 </project>
