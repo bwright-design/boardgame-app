@@ -16,6 +16,7 @@
 <section>
 
   <!--<img class="test" src="https://images-cdn.fantasyflightgames.com/filer_public/c8/4f/c84fe194-fe74-4a09-8bc3-7069b9a31212/ti07_stage-and-secret-objective_card_fan.png">-->
+  <!--<img class="test" src="https://images-cdn.fantasyflightgames.com/filer_public/b2/52/b252f41b-ee63-4c81-8d4c-966f950ea1b8/ti07_diagram_objectives.png"> -->
 
   <div class="obj-cards stage-one">
     <div class="objectiveCard" *ngFor="let objective of stgonevisibleobj">
@@ -26,41 +27,34 @@
       <span>{{objective.points}}</span>
       <h3>Victory Point{{objective.points > 1 ? 's' : ''}}</h3>
     </div>
-  </div>
-
-  <div class="obj-cards stage-one">
-    <div class="card" *ngFor="let objective of stgonevisibleobj">
-      <div class="stars"></div>
-      <div class="card-objs">
-        <div class="card-header">
-          {{objective.name}}
-          <!--{{this.getIsVisible(objective.id)}}-->
-        </div>
-        <div class="card-body">
-          {{objective.condition}}
-        </div>
-        <div class="points">
-          <span>{{objective.points}}</span>
-        </div>
-        <div class="card-footer">
-          <button (click)="this.claimobjective('red',objective.id)" [class.redselected]="getIsClaimed('red',objective.id,0)" [class.red]="!getIsClaimed('red',objective.id,0)" class="button red"></button>
-          <button (click)="this.claimobjective('green',objective.id)" [class.greenselected]="getIsClaimed('green',objective.id,0)" [class.green]="!getIsClaimed('green',objective.id,0)" class="button green"></button>
-          <button (click)="this.claimobjective('black',objective.id)" [class.blackselected]="getIsClaimed('black',objective.id,0)" [class.black]="!getIsClaimed('black',objective.id,0)" class="button black"></button>
-          <button (click)="this.claimobjective('purple',objective.id)" [class.purpleselected]="getIsClaimed('purple',objective.id,0)" [class.purple]="!getIsClaimed('purple',objective.id,0)" class="button purple"></button>
-          <button (click)="this.claimobjective('blue',objective.id)" [class.blueselected]="getIsClaimed('blue',objective.id,0)" [class.blue]="!getIsClaimed('blue',objective.id,0)" class="button blue"></button>
-          <button (click)="this.claimobjective('yellow',objective.id)" [class.yellowselected]="getIsClaimed('yellow',objective.id,0)" [class.yellow]="!getIsClaimed('yellow',objective.id,0)" class="button yellow"></button>
-        </div>
-      </div>
-    </div>
     <div class="add-new-card">
       <div class="top" (click)="this.revealStageOneObjective()">
-          <i class="fas fa-plus"></i>
+        <i class="fas fa-plus"></i>
       </div>
       <div class="bottom" (click)="showWindow()">
-          <i class="fas fa-search"></i>
+        <i class="fas fa-search"></i>
       </div>
     </div>
   </div>
+  <div class="obj-cards stage-two">
+    <div class="objectiveCard" *ngFor="let objective of stgtwovisibleobj">
+      <div class="overlay blue"></div>
+      <h1>{{objective.name}}</h1>
+      <h2>Status Phase</h2>
+      <p>{{objective.condition}}</p>
+      <span>{{objective.points}}</span>
+      <h3>Victory Point{{objective.points > 1 ? 's' : ''}}</h3>
+    </div>
+    <div class="add-new-card">
+      <div class="top" (click)="this.revealStageTwoObjective()">
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="bottom" (click)="showWindow()">
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <!--<section> TODO: Add score tracker
@@ -70,14 +64,14 @@
 </section>-->
 
 <section>
-  <div class="obj-cards stage-two">
+  <!--<div class="obj-cards stage-two">
     <div class="card" *ngFor="let objective of stgtwovisibleobj">
       <div class="stars"></div>
       <div class="card-objs">
         <div class="card-header">
           {{i}}
           {{ objective.name }}
-          <!--{{this.getIsVisible(objective.id)}}-->
+          &lt;!&ndash;{{this.getIsVisible(objective.id)}}&ndash;&gt;
         </div>
         <div class="card-body">
           {{ objective.condition }}
@@ -103,7 +97,7 @@
         <i class="fas fa-search"></i>
       </div>
     </div>
-  </div>
+  </div>-->
 </section>
 <section>
   <div id="total-score">

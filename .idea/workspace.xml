@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="371264b1-e26c-43ca-8894-d0c2cb2248c1" name="Default Changelist" comment="new images">
+    <list default="true" id="371264b1-e26c-43ca-8894-d0c2cb2248c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/api/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/api/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/games/twilight-imperium/twilight-imperium.component.html" afterDir="false" />
@@ -89,7 +89,7 @@
       <workItem from="1632197702854" duration="106000" />
       <workItem from="1632197922056" duration="23000" />
       <workItem from="1633662305251" duration="83000" />
-      <workItem from="1633662391188" duration="10145000" />
+      <workItem from="1633662391188" duration="12035000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1581117330524</created>
@@ -147,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628350658007</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="new card style">
+      <created>1633673188540</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1633673188540</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +181,7 @@
     <MESSAGE value="fixed spacing of cards" />
     <MESSAGE value="added new objs" />
     <MESSAGE value="new images" />
-    <option name="LAST_COMMIT_MESSAGE" value="new images" />
+    <MESSAGE value="new card style" />
+    <option name="LAST_COMMIT_MESSAGE" value="new card style" />
   </component>
 </project>

@@ -715,7 +715,7 @@
     {
       "id": 5,
       "objectiveid": 51,
-      "isvisible": false,
+      "isvisible": true,
       "isextra": false
     },
     {

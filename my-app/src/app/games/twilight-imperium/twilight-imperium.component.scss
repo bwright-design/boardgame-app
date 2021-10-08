@@ -101,8 +101,6 @@ section{
   .obj-cards{
     display:flex;
     flex-flow:row wrap;
-    justify-content: center;
-    width: calc(100% - 50px);
     &.stage-one{
       .add-new-card {
         background-color: rgba(238, 164, 29, 0.05);
@@ -707,6 +705,7 @@ section{
 .window-wrap {
   display: flex;
   justify-content: center;
+  z-index: 999;
   .overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -720,6 +719,7 @@ section{
     color: #ffffff;
     position: absolute;
     top: 10%;
+    z-index: 999;
     //left: 50%;
     //transform: translateX(-50%);
     //overflow:hidden;
@@ -897,7 +897,6 @@ section{
 
 .objectiveCard{
   position: relative;
-  top: 35px;
   left: 231px;
   width: 264px;
   height: 408px;
@@ -905,7 +904,7 @@ section{
   background-color: #030204;
   overflow:hidden;
   margin:0 10px;
-  //transform: scale(0.7);
+  //transform: scale(0.75);
   //box-shadow: 0px 0px 5px 2px rgb(255 255 255 / 60%);
   &::after{
     content: '';
